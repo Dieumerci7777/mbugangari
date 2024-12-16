@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books by Categories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Hover effects for category cards */
+        .category-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #1f7a1f; /* Darker green for hover effect */
+            text-decoration: underline;
+        }
+
+        .category-card img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .category-card img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+  
+
+    <!-- Book Categories Header Section -->
+    <header class="bg-green-600 text-white py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo Section -->
+            <a href="index.html">
+                <img src="favicon.png" alt="SDA Logo" class="h-10"> <!-- Replace with your logo -->
+            </a>
+            
+            <!-- Navigation Section -->
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#umuryango" class="nav-link">Umuryango</a></li>
+                    <li><a href="#ellen-white" class="nav-link">Ellen G. White</a></li>
+                    <li><a href="#ubuhanuzi" class="nav-link">Ubuhanuzi</a></li>
+                    <li><a href="#urukundo" class="nav-link">Urukundo</a></li>
+                    <li><a href="#ubuzima" class="nav-link">Ubuzima</a></li>
+                    <li><a href="#ibyigisho" class="nav-link">Ibyigisho</a></li>
+                    <li><a href="#genzura" class="nav-link">Genzura</a></li>
+                    <li><a href="#authors-periodicals" class="nav-link">Other Books & Periodicals</a></li>
+                </ul>
+            </nav>
+    
+            <a href="index.html" class="text-white bg-green-600 py-2 px-4 rounded-md hover:bg-green-800">
+                <i class="fas fa-home"></i> Home
+            </a>
+            
+
+        </div>
+    </header>
+    
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto py-10 px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Books by Categories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Category Cards -->
+            <div id="umuryango" class="bg-white shadow-md rounded-lg overflow-hidden category-card">
+                <img src="umuryango-icon.jpeg" alt="Umuryango" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-green-600">Umuryango</h3>
+                    <p class="text-gray-600 mt-2">Books about family, relationships, and building strong Christian homes.</p>
+                    <a href="#umuryango" class="mt-4 inline-block text-green-600 hover:text-green-800">View Books &rarr;</a>
+                </div>
+            </div>
+
+            <div id="ellen-white" class="bg-white shadow-md rounded-lg overflow-hidden category-card">
+                <img src="ellen-white-icon.jpeg" alt="Ellen G. White" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-green-600">Ellen G. White</h3>
+                    <p class="text-gray-600 mt-2">Inspirational writings and books by Ellen G. White.</p>
+                    <a href="#ellen-white" class="mt-4 inline-block text-green-600 hover:text-green-800">View Books &rarr;</a>
+                </div>
+            </div>
+
+            <div id="ubuhanuzi" class="bg-white shadow-md rounded-lg overflow-hidden category-card">
+                <img src="ubuhanuzi-icon.jpeg" alt="Ubuhanuzi" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-green-600">Ubuhanuzi</h3>
+                    <p class="text-gray-600 mt-2">Prophecy books explaining end-time events and their meanings.</p>
+                    <a href="#ubuhanuzi" class="mt-4 inline-block text-green-600 hover:text-green-800">View Books &rarr;</a>
+                </div>
+            </div>
+
+            <div id="urukundo" class="bg-white shadow-md rounded-lg overflow-hidden category-card">
+                <img src="urukundo-icon.jpeg" alt="Urukundo" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-green-600">Urukundo</h3>
+                    <p class="text-gray-600 mt-2">Books focused on love, relationships, and forgiveness.</p>
+                    <a href="#urukundo" class="mt-4 inline-block text-green-600 hover:text-green-800">View Books &rarr;</a>
+                </div>
+            </div>
+
+            <div id="ubuzima" class="bg-white shadow-md rounded-lg overflow-hidden category-card">
+                <img src="ubuzima-icon.jpeg" alt="Ubuzima" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-green-600">Ubuzima</h3>
+                    <p class="text-gray-600 mt-2">Books about health, wellness, and Christian living.</p>
+                    <a href="#ubuzima" class="mt-4 inline-block text-green-600 hover:text-green-800">View Books &rarr;</a>
+                </div>
+            </div>
+
+            <div id="ibyigisho" class="bg-white shadow-md rounded-lg overflow-hidden category-card">
+                <img src="ibyigisho-icon.jpeg" alt="Ibyigisho" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-green-600">Ibyigisho</h3>
+                    <p class="text-gray-600 mt-2">Study guides and educational books for spiritual growth.</p>
+                    <a href="#ibyigisho" class="mt-4 inline-block text-green-600 hover:text-green-800">View Books &rarr;</a>
+                </div>
+            </div>
+
+            <div id="genzura" class="bg-white shadow-md rounded-lg overflow-hidden category-card">
+                <img src="genzura-icon.jpeg" alt="Genzura" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-green-600">Genzura</h3>
+                    <p class="text-gray-600 mt-2">Books and resources focused on biblical critique, evaluation, and reflection.</p>
+                    <a href="#genzura" class="mt-4 inline-block text-green-600 hover:text-green-800">View Books &rarr;</a>
+                </div>
+            </div>
+
+            <div id="authors-periodicals" class="bg-white shadow-md rounded-lg overflow-hidden category-card">
+                <img src="authors-periodicals-icon.jpeg" alt="Other Authors & Periodicals" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-green-600">Other Authors & Periodicals</h3>
+                    <p class="text-gray-600 mt-2">A collection of books by various authors and periodic publications for spiritual enrichment.</p>
+                    <a href="#authors-periodicals" class="mt-4 inline-block text-green-600 hover:text-green-800">View Books &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+</body>
+
+</html>
